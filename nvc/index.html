@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>mip-NeRF</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+    <meta property="og:image" content="https://jonbarron.info/mipnerf/img/rays_square.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="682">
+    <meta property="og:image:height" content="682">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zoyashaf.github.io/nvc/"/>
+    <meta property="og:title" content="mip-NeRF" />
+    <meta property="og:description" content="Project page for Nonverbal Communication Cue Recognition: A Pathway to More Accessible Communication." />
+  
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                Nonverbal Communication Cue Recognition: A Pathway to More Accessible Communication </br> 
+                <small>
+                    Women in Computer Vision Workshop, CVPR 2023
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://zoyashaf.github.io/">
+                          Zoya Shafique
+                        </a>
+                        </br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    </li>
+                    <li>
+                        <a href="https://haiyan-chris-wang.github.io/">
+                            Haiyan Wang
+                        </a>
+                        </br>The City College of New York
+                    </li>
+                    <li>
+                        <a href="http://matthewtancik.com/">
+                          Yingli Tian
+                        </a>
+                        </br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    </li><br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/abs/2103.13415">
+                            <image src="img/mip_paper_image.jpg" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/EpH175PY1A0">
+                            <image src="img/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://github.com/">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <image src="img/rays.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify">
+                    Nonverbal communication, such as body language, facial expressions, and hand gestures, is crucial to human
+                    communication as it conveys more information about emotions and attitudes than spoken words. 
+                    However, individuals who are blind or have low-vision (BLV) may not have access to this method of communication, 
+                    leading to asymmetry in conversations. Developing systems to recognize nonverbal communication cues (NVCs) for the BLV 
+                    community would enhance communication and understanding
+                    for both parties. This paper focuses on developing a multimodal computer vision system to recognize and detect
+                    NVCs. To accomplish our objective, we are collecting a
+                    dataset focused on nonverbal communication cues. Here,
+                    we propose a baseline model for recognizing NVCs and
+                    present initial results on the Aff-Wild2 dataset. Our baseline model achieved an accuracy of 68% and a F1-Score
+                    of 64% on the Aff-Wild2 validation set, making it comparable with previous state of the art results. Furthermore, we
+                    discuss the various challenges associated with NVC recognition as well as the limitations of our current work
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Integrated Positional Encoding
+                </h3>
+                <p class="text-justify">
+                    Typical positional encoding (as used in Transformer networks and Neural Radiance Fields) maps a single point in space to a feature vector, where each element is generated by a sinusoid with an exponentially increasing frequency:
+                </p>
+            
+            </div>
+        </div>
+            
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Mip-NeRF
+                </h3>
+                <p class="text-justify">
+                    We use integrated positional encoding to train NeRF to generate anti-aliased renderings. Rather than casting an infinitesimal ray through each pixel, we instead cast a full 3D <em>cone</em>. For each queried point along a ray, we consider its associated 3D conical frustum. Two different cameras viewing the same point in space may result in vastly different conical frustums, as illustrated here in 2D:
+                </p>
+                <p style="text-align:center;">
+                    <image src="img/scales_toy.png" class="img-responsive" alt="scales">
+                </p>
+                <p class="text-justify">
+                    In order to pass this information through the NeRF network, we fit a multivariate Gaussian to the conical frustum and use the integrated positional encoding described above to create the input feature vector to the network. 
+                </p>
+            </div>
+        </div>
+            
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Results
+                </h3>
+                <p class="text-justify">
+                    We train NeRF and mip-NeRF on a dataset with images at four different resolutions. Normal NeRF (left) is not capable of learning to represent the same scene at multiple levels of detail, with blurring in close-up shots and aliasing in low resolution views, while mip-NeRF (right) both preserves sharp details in close-ups and correctly renders the zoomed-out images.
+                </p>                
+                <br>
+            
+            </div>
+        </div>
+
+
+        
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@article{barron2021mipnerf,
+    title={Mip-NeRF: A Multiscale Representation 
+           for Anti-Aliasing Neural Radiance Fields},
+    author={Jonathan T. Barron and Ben Mildenhall and 
+            Matthew Tancik and Peter Hedman and 
+            Ricardo Martin-Brualla and Pratul P. Srinivasan},
+    journal={arXiv},
+    year={2021}
+}</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                We thank Janne Kontkanen and David Salesin for their comments on the text, Paul Debevec for constructive discussions, and Boyang Deng for JaxNeRF. 
+                    <br>
+                MT is funded by an NSF Graduate Fellowship.
+                    <br>
+                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
